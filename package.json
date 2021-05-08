@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cucumber":"cucumber-js",
     "start": "node_modules/.bin/cucumber-js .\\Features\\Login.feature -r .\\Steps\\Login.js",
-    "automate": "cucumber-js"
+    "report":"node_modules/.bin/cucumber-js --format html:results.html"
   },
   "author": "CucumberAppiumExampleAuthor",
   "license": "ISC",
